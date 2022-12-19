@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BaseError model module.
  * @module model/BaseError
- * @version v1.0.11
+ * @version 1.0.12
  */
 class BaseError {
     /**
