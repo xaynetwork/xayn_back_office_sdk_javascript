@@ -19,7 +19,7 @@ import IngestionErrorAllOfDetails from './IngestionErrorAllOfDetails';
 /**
  * The IngestionError model module.
  * @module model/IngestionError
- * @version 1.0.16
+ * @version 1.0.17
  */
 class IngestionError {
     /**

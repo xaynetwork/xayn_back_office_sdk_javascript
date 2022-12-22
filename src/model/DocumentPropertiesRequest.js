@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DocumentPropertiesRequest model module.
  * @module model/DocumentPropertiesRequest
- * @version 1.0.16
+ * @version 1.0.17
  */
 class DocumentPropertiesRequest {
     /**

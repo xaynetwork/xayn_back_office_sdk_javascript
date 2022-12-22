@@ -17,7 +17,7 @@ import IngestedDocument from './IngestedDocument';
 /**
  * The IngestionRequest model module.
  * @module model/IngestionRequest
- * @version 1.0.16
+ * @version 1.0.17
  */
 class IngestionRequest {
     /**

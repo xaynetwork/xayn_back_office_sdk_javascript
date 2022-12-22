@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The IngestionErrorAllOfDetailsDocuments model module.
  * @module model/IngestionErrorAllOfDetailsDocuments
- * @version 1.0.16
+ * @version 1.0.17
  */
 class IngestionErrorAllOfDetailsDocuments {
     /**
