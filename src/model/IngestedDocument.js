@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The IngestedDocument model module.
  * @module model/IngestedDocument
- * @version 1.0.13
+ * @version 1.0.14
  */
 class IngestedDocument {
     /**

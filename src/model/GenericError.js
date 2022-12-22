@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GenericError model module.
  * @module model/GenericError
- * @version 1.0.13
+ * @version 1.0.14
  */
 class GenericError {
     /**
