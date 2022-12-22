@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeleteDocumentsRequest model module.
  * @module model/DeleteDocumentsRequest
- * @version 1.0.17
+ * @version 1.0.18
  */
 class DeleteDocumentsRequest {
     /**
