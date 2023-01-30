@@ -10,6 +10,7 @@ src/ApiClient.js
 src/com.xayn.backoffice/BackOfficeApi.js
 src/index.js
 src/model/DeleteDocumentsRequest.js
+src/model/DocumentProperties.js
 src/model/DocumentPropertiesRequest.js
 src/model/DocumentPropertiesResponse.js
 src/model/DocumentPropertyRequest.js
@@ -23,6 +24,7 @@ src/model/IngestionErrorAllOfDetailsDocuments.js
 src/model/IngestionRequest.js
 test/api/BackOfficeApi.spec.js
 test/model/DeleteDocumentsRequest.spec.js
+test/model/DocumentProperties.spec.js
 test/model/DocumentPropertiesRequest.spec.js
 test/model/DocumentPropertiesResponse.spec.js
 test/model/DocumentPropertyRequest.spec.js

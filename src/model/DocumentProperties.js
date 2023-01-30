@@ -14,19 +14,20 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The IngestionErrorAllOfDetailsDocuments model module.
- * @module model/IngestionErrorAllOfDetailsDocuments
+ * The DocumentProperties model module.
+ * @module model/DocumentProperties
  * @version 1.0.20
  */
-class IngestionErrorAllOfDetailsDocuments {
+class DocumentProperties {
     /**
-     * Constructs a new <code>IngestionErrorAllOfDetailsDocuments</code>.
-     * @alias module:model/IngestionErrorAllOfDetailsDocuments
-     * @param id {String} An id can be any non-empty string that consist of digits, latin letters, underscores, colons, minus signs, at signs, and dots.
+     * Constructs a new <code>DocumentProperties</code>.
+     * Mostly arbitrary properties that can be attached to a document. A key must be a valid &#x60;DocumentPropertyId&#x60;.
+     * @alias module:model/DocumentProperties
+     * @extends Object
      */
-    constructor(id) { 
+    constructor() { 
         
-        IngestionErrorAllOfDetailsDocuments.initialize(this, id);
+        DocumentProperties.initialize(this);
     }
 
     /**
@@ -34,44 +35,36 @@ class IngestionErrorAllOfDetailsDocuments {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, id) { 
-        obj['id'] = id;
+    static initialize(obj) { 
     }
 
     /**
-     * Constructs a <code>IngestionErrorAllOfDetailsDocuments</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>DocumentProperties</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/IngestionErrorAllOfDetailsDocuments} obj Optional instance to populate.
-     * @return {module:model/IngestionErrorAllOfDetailsDocuments} The populated <code>IngestionErrorAllOfDetailsDocuments</code> instance.
+     * @param {module:model/DocumentProperties} obj Optional instance to populate.
+     * @return {module:model/DocumentProperties} The populated <code>DocumentProperties</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new IngestionErrorAllOfDetailsDocuments();
+            obj = obj || new DocumentProperties();
 
-            if (data.hasOwnProperty('id')) {
-                obj['id'] = ApiClient.convertToType(data['id'], 'String');
+            ApiClient.constructFromObject(data, obj, 'Object');
+            
+
+            if (data.hasOwnProperty('publication_date')) {
+                obj['publication_date'] = ApiClient.convertToType(data['publication_date'], 'Date');
             }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>IngestionErrorAllOfDetailsDocuments</code>.
+     * Validates the JSON data with respect to <code>DocumentProperties</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>IngestionErrorAllOfDetailsDocuments</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DocumentProperties</code>.
      */
     static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of IngestionErrorAllOfDetailsDocuments.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['id'] && !(typeof data['id'] === 'string' || data['id'] instanceof String)) {
-            throw new Error("Expected the field `id` to be a primitive type in the JSON string but got " + data['id']);
-        }
 
         return true;
     }
@@ -79,18 +72,18 @@ class IngestionErrorAllOfDetailsDocuments {
 
 }
 
-IngestionErrorAllOfDetailsDocuments.RequiredProperties = ["id"];
+
 
 /**
- * An id can be any non-empty string that consist of digits, latin letters, underscores, colons, minus signs, at signs, and dots.
- * @member {String} id
+ * A RFC3339 compatible date-time  - can be in the future - will be converted to and then stored as UTC - sub-second resolution is not guaranteed. - while `properties.publication_date` is in the future the document will not be   returned for personalized documents, once it is no longer in the future it will   automatically be considered for personalization from then on 
+ * @member {Date} publication_date
  */
-IngestionErrorAllOfDetailsDocuments.prototype['id'] = undefined;
+DocumentProperties.prototype['publication_date'] = undefined;
 
 
 
 
 
 
-export default IngestionErrorAllOfDetailsDocuments;
+export default DocumentProperties;
 
