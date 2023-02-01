@@ -58,7 +58,7 @@ import BackOfficeApi from './com.xayn.backoffice/BackOfficeApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.0.20
+* @version 1.20.1
 */
 export {
     /**
