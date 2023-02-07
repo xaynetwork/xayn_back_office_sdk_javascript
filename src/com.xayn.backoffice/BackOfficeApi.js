@@ -25,7 +25,7 @@ import IngestionRequest from '../model/IngestionRequest';
 /**
 * BackOffice service.
 * @module com.xayn.backoffice/BackOfficeApi
-* @version 1.20.1
+* @version 1.0.21
 */
 export default class BackOfficeApi {
 
