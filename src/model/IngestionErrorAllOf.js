@@ -17,7 +17,7 @@ import IngestionErrorAllOfDetails from './IngestionErrorAllOfDetails';
 /**
  * The IngestionErrorAllOf model module.
  * @module model/IngestionErrorAllOf
- * @version 1.0.21
+ * @version 1.0.22
  */
 class IngestionErrorAllOf {
     /**
