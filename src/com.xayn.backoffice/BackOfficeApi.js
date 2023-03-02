@@ -25,7 +25,7 @@ import IngestionRequest from '../model/IngestionRequest';
 /**
 * BackOffice service.
 * @module com.xayn.backoffice/BackOfficeApi
-* @version 1.0.24
+* @version 1.0.25
 */
 export default class BackOfficeApi {
 
@@ -91,7 +91,7 @@ export default class BackOfficeApi {
 
     /**
      * Delete the document from the system.
-     * Permanently deletes the document from the system. The endpoint is idempotent. Deleting a non-existing document does not produce an error.
+     * Permanently deletes the document from the system.
      * @param {String} documentId Id of the document
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -125,7 +125,7 @@ export default class BackOfficeApi {
 
     /**
      * Delete the document from the system.
-     * Permanently deletes the document from the system. The endpoint is idempotent. Deleting a non-existing document does not produce an error.
+     * Permanently deletes the document from the system.
      * @param {String} documentId Id of the document
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */
@@ -242,7 +242,7 @@ export default class BackOfficeApi {
 
     /**
      * Delete all listed documents.
-     * Delete all documents listed in the request body. The endpoint is idempotent. I.e. if the list contains one or multiple non-existing documents, no error is produced.
+     * Delete all documents listed in the request body.
      * @param {module:model/DeleteDocumentsRequest} deleteDocumentsRequest 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing HTTP response
      */
@@ -275,7 +275,7 @@ export default class BackOfficeApi {
 
     /**
      * Delete all listed documents.
-     * Delete all documents listed in the request body. The endpoint is idempotent. I.e. if the list contains one or multiple non-existing documents, no error is produced.
+     * Delete all documents listed in the request body.
      * @param {module:model/DeleteDocumentsRequest} deleteDocumentsRequest 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}
      */

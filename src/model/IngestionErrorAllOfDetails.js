@@ -17,7 +17,7 @@ import IngestionErrorAllOfDetailsDocuments from './IngestionErrorAllOfDetailsDoc
 /**
  * The IngestionErrorAllOfDetails model module.
  * @module model/IngestionErrorAllOfDetails
- * @version 1.0.24
+ * @version 1.0.25
  */
 class IngestionErrorAllOfDetails {
     /**
@@ -76,7 +76,7 @@ class IngestionErrorAllOfDetails {
             }
             // validate the optional field `documents` (array)
             for (const item of data['documents']) {
-                IngestionErrorAllOfDetailsDocuments.validateJsonObject(item);
+                IngestionErrorAllOfDetailsDocuments.validateJSON(item);
             };
         }
 

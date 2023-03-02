@@ -17,7 +17,7 @@ import IngestedDocument from './IngestedDocument';
 /**
  * The IngestionRequest model module.
  * @module model/IngestionRequest
- * @version 1.0.24
+ * @version 1.0.25
  */
 class IngestionRequest {
     /**
@@ -76,7 +76,7 @@ class IngestionRequest {
             }
             // validate the optional field `documents` (array)
             for (const item of data['documents']) {
-                IngestedDocument.validateJsonObject(item);
+                IngestedDocument.validateJSON(item);
             };
         }
 

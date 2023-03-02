@@ -17,7 +17,7 @@ import DocumentProperties from './DocumentProperties';
 /**
  * The DocumentPropertiesResponse model module.
  * @module model/DocumentPropertiesResponse
- * @version 1.0.24
+ * @version 1.0.25
  */
 class DocumentPropertiesResponse {
     /**

@@ -17,7 +17,7 @@ import DocumentProperties from './DocumentProperties';
 /**
  * The DocumentPropertiesRequest model module.
  * @module model/DocumentPropertiesRequest
- * @version 1.0.24
+ * @version 1.0.25
  */
 class DocumentPropertiesRequest {
     /**
