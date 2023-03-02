@@ -17,7 +17,7 @@ import DocumentProperties from './DocumentProperties';
 /**
  * The IngestedDocument model module.
  * @module model/IngestedDocument
- * @version 1.0.25
+ * @version 1.0.26
  */
 class IngestedDocument {
     /**
